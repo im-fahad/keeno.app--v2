@@ -26,8 +26,6 @@ module.exports = {
         port: 3000,
         open: true,
         hot: true,
-        liveReload: false,
-        compress: true,
     },
     module: {
         rules: [
