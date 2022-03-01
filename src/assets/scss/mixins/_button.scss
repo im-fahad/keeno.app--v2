@@ -1,0 +1,30 @@
+@mixin c-button($name, $bg, $color) {
+    &--#{$name} {
+        background-color: var(--#{$bg});
+        color: var(--#{$color});
+
+        &:hover {
+            background-color: customDarken($bg, 10%);
+            box-shadow: none;
+        }
+
+        &.transparent {
+            background-color: customRGBA($bg, .1);
+            color: var(--#{$bg});
+
+            &:hover {
+                background-color: var(--#{$bg});
+                color: var(--#{$color});
+            }
+        }
+
+        &.outline {
+            border-color: var(--#{$bg});
+            color: var(--#{$bg});
+
+            &:hover {
+                color: var(--#{$color});
+            }
+        }
+    }
+}

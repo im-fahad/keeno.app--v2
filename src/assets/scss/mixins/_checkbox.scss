@@ -1,0 +1,21 @@
+@mixin c-checkbox($name, $color) {
+    .c-checkbox {
+        &--#{$name} {
+            .c-checkbox__input {
+                &:checked + label {
+                    &::before {
+                        color: $color;
+                        border-color: $color;
+                    }
+                }
+
+                &--checked + label {
+                    &::before {
+                        color: $color;
+                        border-color: $color;
+                    }
+                }
+            }
+        }
+    }
+}

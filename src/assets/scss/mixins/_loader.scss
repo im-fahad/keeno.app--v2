@@ -1,0 +1,36 @@
+@mixin c-loader($name) {
+    &--#{""+$name} {
+        & .c-loader {
+            &__dotted {
+                &-item {
+                    &:nth-child(1) {
+                        background: customRGBA($name, 0.6);
+                    }
+
+                    &:nth-child(2) {
+                        background: customRGBA($name, 0.8);
+                    }
+
+                    &:nth-child(3) {
+                        background: customRGBA($name, 1);
+                    }
+
+                    &:nth-child(4) {
+                        background: customRGBA($name, 0.8);
+                    }
+
+                    &:nth-child(5) {
+                        background: customRGBA($name, 0.6);
+                    }
+                }
+            }
+
+            /* CIRCLE DOT LOADER */
+            &__spinner {
+                & div {
+                    background-color: var(--#{$name});
+                }
+            }
+        }
+    }
+}

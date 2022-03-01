@@ -1,0 +1,19 @@
+@mixin c-radio($name, $color) {
+    .c-radio {
+        &--#{$name} {
+            .c-radio__input {
+                &:checked + label {
+                    &::before {
+                        color: $color;
+                    }
+                }
+
+                &--checked + label {
+                    &::before {
+                        color: $color;
+                    }
+                }
+            }
+        }
+    }
+}

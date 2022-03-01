@@ -1,0 +1,6 @@
+@mixin c-pill($name) {
+    &--#{""+$name} {
+        background-color: customRGBA($name, .1);
+        color: var(--#{$name});
+    }
+}
