@@ -1,0 +1,332 @@
+.home-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    @include media-breakpoint-down(xxl) {
+        margin-bottom: 48px;
+    }
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 46px;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 44px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-bottom: 42px;
+    }
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 40px;
+    }
+
+    &__inner {
+        padding: 110px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media-breakpoint-down(xxl) {
+            padding: 100px 0;
+        }
+        @include media-breakpoint-down(xl) {
+            padding: 90px 0;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 80px 0;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 70px 0;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 60px 0;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: $white;
+        margin-bottom: 15px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: 2.8rem;
+            margin-bottom: 14px;
+        }
+        @include media-breakpoint-down(xl) {
+            font-size: 2.6rem;
+            margin-bottom: 13px;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 2.2rem;
+            margin-bottom: 11px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        color: $white;
+        margin-bottom: 25px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: 1.3rem;
+            margin-bottom: 24px;
+        }
+        @include media-breakpoint-down(xl) {
+            font-size: 1.2rem;
+            margin-bottom: 23px;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 1rem;
+            margin-bottom: 21px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: .9rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__search {
+        width: 100%;
+        max-width: 865px;
+        height: 60px;
+        border-radius: 10px;
+        //overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-color: $white;
+
+        @include media-breakpoint-down(xxl) {
+            height: 58px;
+        }
+        @include media-breakpoint-down(xl) {
+            height: 56px;
+        }
+        @include media-breakpoint-down(lg) {
+            height: 54px;
+        }
+        @include media-breakpoint-down(md) {
+            height: 52px;
+        }
+        @include media-breakpoint-down(sm) {
+            height: 50px;
+        }
+
+        &-dropdown {
+            height: 100%;
+            min-width: 230px;
+            text-align: left;
+            border-right: 2px solid #C4C4C4 !important;
+
+            @include media-breakpoint-down(xxl) {
+                min-width: 220px;
+            }
+            @include media-breakpoint-down(xl) {
+                min-width: 210px;
+            }
+            @include media-breakpoint-down(lg) {
+                min-width: 200px;
+            }
+            @include media-breakpoint-down(md) {
+                min-width: 190px;
+            }
+            @include media-breakpoint-down(sm) {
+                min-width: 180px;
+            }
+
+            &-select {
+                width: 100%;
+                height: 100%;
+                font-size: 1rem;
+                color: $title;
+                padding: 10px 20px;
+                border: none;
+                background-color: transparent;
+                outline: none;
+                box-shadow: none;
+
+                @include media-breakpoint-down(xxl) {
+                    font-size: .98rem;
+                    padding: 9px 19px;
+                }
+                @include media-breakpoint-down(xl) {
+                    font-size: .96rem;
+                    padding: 8px 18px;
+                }
+                @include media-breakpoint-down(lg) {
+                    font-size: .94rem;
+                    padding: 7px 17px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: .92rem;
+                    padding: 6px 16px;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: .9rem;
+                    padding: 5px 15px;
+                }
+            }
+        }
+
+        &-input {
+            flex: 1;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            padding: 10px 20px;
+            font-size: 1rem;
+
+            @include media-breakpoint-down(xxl) {
+                font-size: .98rem;
+                padding: 9px 19px;
+            }
+            @include media-breakpoint-down(xl) {
+                font-size: .96rem;
+                padding: 8px 18px;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: .94rem;
+                padding: 7px 17px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: .92rem;
+                padding: 6px 16px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: .9rem;
+                padding: 5px 15px;
+            }
+
+            &:focus,
+            &:active {
+                background-color: transparent;
+                box-shadow: none;
+                outline: none;
+                border: none;
+            }
+        }
+
+        &-btn {
+            height: 100%;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary;
+            border-radius: 10px;
+            border: none;
+            font-size: 2rem;
+            color: $white;
+            margin-right: -1px;
+
+            @include media-breakpoint-down(xxl) {
+                width: 58px;
+                font-size: 1.9rem;
+            }
+            @include media-breakpoint-down(xl) {
+                width: 56px;
+                font-size: 1.8rem;
+            }
+            @include media-breakpoint-down(lg) {
+                width: 54px;
+                font-size: 1.7rem;
+            }
+            @include media-breakpoint-down(md) {
+                width: 52px;
+                font-size: 1.6rem;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 50px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.category-slider {
+    padding: 0 50px;
+
+    & .slick-prev,
+    & .slick-next {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07) !important;
+
+        &:before {
+            font-size: 1.5rem;
+            color: $title;
+        }
+
+        &:hover{
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+            &:before {
+                color: $primary;
+            }
+        }
+    }
+
+    & .slick-prev{
+        left: -50px;
+
+        &:before{
+            content: '\F0141';
+            font-family: "Material Design Icons";
+        }
+    }
+    & .slick-next{
+        right: -50px;
+
+        &:before{
+            content: '\F0142';
+            font-family: "Material Design Icons";
+        }
+    }
+
+    &__item{
+        padding: 5px;
+
+        &-inner{
+            padding: 15px;
+            border-radius: 10px;
+            background-color: $white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            height: 136px;
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        &-icon{
+            width: 40px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        &-title{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

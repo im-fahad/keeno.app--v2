@@ -5,50 +5,289 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
+    <title>Keeno</title>
 </head>
 <body>
 <div class="main">
-<div class="k-layout">
-    <div class="k-layout__header">
-        <div class="container h-full">
-            <div class="k-header">
-                <a class="k-header__logo" href="#">
-                    <img class="k-header__logo-img" src="../assets/images/logo/keeno.svg" alt="Keeno">
-                </a>
+    <div class="k-layout">
+        <div class="k-layout__header">
+            <div class="container h-full">
+                <div class="k-header">
+                    <a class="k-header__logo" href="#">
+                        <img class="k-header__logo-img" src="../assets/images/logo/keeno.svg" alt="Keeno">
+                    </a>
 
-                <ul class="k-header__list">
-                    <li class="k-header__list-item">
-                        <button class="k-header__btn">
-                            English
-                            <i class="mdi mdi-chevron-down pl-2"></i>
-                        </button>
-                    </li>
-                    <li class="k-header__list-item">
-                        <button class="k-header__btn">
-                            <i class="mdi mdi-wechat"></i>
-                            Chat
-                        </button>
-                    </li>
-                    <li class="k-header__list-item">
-                        <button class="k-header__btn">
-                            <i class="mdi mdi-account"></i>
-                            Login
-                        </button>
-                    </li>
-                    <li class="k-header__list-item">
-                        <button class="k-header__btn">
-                            <i class="mdi mdi-camera"></i>
-                            Sell Product
-                        </button>
-                    </li>
-                </ul>
+                    <ul class="k-header__list">
+                        <li class="k-header__list-item">
+                            <div class="dropdown k-header__list-dropdown">
+                                <button type="button" class="k-header__btn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                    <i class="mdi mdi-chevron-down k-header__btn-icon ms-2"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Lang 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Lang 2</a></li>
+                                    <li><a class="dropdown-item" href="#">lang 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn">
+                                <i class="mdi mdi-wechat k-header__btn-icon me-2"></i>
+                                Chat
+                            </button>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn">
+                                <i class="mdi mdi-account k-header__btn-icon me-2"></i>
+                                Login
+                            </button>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn active">
+                                <i class="mdi mdi-camera k-header__btn-icon me-2"></i>
+                                Sell Product
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="k-layout__inner">
+            <div class="home-banner" style="background-image: url('../assets/images/home-banner.png')">
+                <div class="container">
+                    <div class="home-banner__inner">
+                        <h1 class="home-banner__title">Buy, Sell and Discover Used or New Products</h1>
+                        <p class="home-banner__description">Everyone lives by buying and selling something</p>
+
+                        <div class="home-banner__search">
+                            <div class="home-banner__search-dropdown">
+                                <select class="home-banner__search-dropdown-select" name="state">
+                                    <option selected disabled>Location</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+
+                            <input class="home-banner__search-input" type="text" name=""
+                                   placeholder="Search for anything">
+                            <button class="home-banner__search-btn">
+                                <i class="home-banner__search-btn-icon mdi mdi-magnify"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section">
+                    <h4 class="section__title">Browse by Category</h4>
+                    <div class="section__inner">
+                        <div class="category-slider">
+                            <div id="categorySlider">
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/mobile.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Phone & Tablets
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/devices.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Electronics & Gadgets
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/car.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Automative
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/monitor.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Home Appliances
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/furnitures.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Furnitures
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/house.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Property
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/dribbble.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Sports & Hobbies
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/pet.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Pets & Accessories
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/dribbble.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Sports & Hobbies
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="category-slider__item">
+                                    <div class="category-slider__item-inner">
+                                        <img class="category-slider__item-icon"
+                                             src="../assets/images/icons/category/pet.svg" alt="">
+                                        <span class="category-slider__item-title">
+                                        Pets & Accessories
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="k-layout__footer">
+            <div class="container">
+                <div class="k-footer">
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <a class="k-footer__logo" href="#">
+                                <img class="k-footer__logo-img" src="../assets/images/logo/keeno.svg" alt="Keeno">
+                            </a>
+                            <p class="k-footer__description">
+                                Keeno is the fastest online
+                                marketplace in Bangladesh. Start
+                                buying or selling anything instantly
+                                with our simple navigation without
+                                any hassle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                About Keeno.
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Career</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">How to Sell Products</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">About Us</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                Legal
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">FAQ</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Terms & Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                Follow Us
+                            </h4>
+                            <ul class="k-footer__list k-footer__list--social">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon" src="../assets/images/icons/Facebook.svg"
+                                             alt="Facebook">
+                                    </a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon" src="../assets/images/icons/instagram.svg"
+                                             alt="Instagram">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h4 class="k-footer__item-title">
+                                Follow Us
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon k-footer__list-item-icon--g-play"
+                                             src="../assets/images/icons/google-play.svg" alt="Google Play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="k-layout__inner"></div>
-    <div class="k-layout__footer"></div>
 </div>
-</div>
+<script src="../assets/vendors/jquery/dist/jquery.min.js"></script>
+<script src="../assets/vendors/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="../assets/vendors/slick/slick.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#categorySlider').slick({
+            infinite: false,
+            slidesToShow: 8,
+            slidesToScroll: 8,
+        });
+    });
+</script>
 </body>
 </html>
