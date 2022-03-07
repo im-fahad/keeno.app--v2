@@ -330,3 +330,202 @@
         }
     }
 }
+
+.ad-container{
+    width: 100%;
+    height: auto;
+
+    &--970{
+        max-width: 970px;
+        max-height: 90px;
+    }
+
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.products{
+    width: 100%;
+
+    &__row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: -20px;
+        margin-bottom: -20px;
+
+        @include media-breakpoint-down(xxl) {
+            margin-right: -19px;
+            margin-bottom: -19px;
+        }
+        @include media-breakpoint-down(xl) {
+            margin-right: -18px;
+            margin-bottom: -18px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-right: -17px;
+            margin-bottom: -17px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-right: -16px;
+            margin-bottom: -16px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-right: -15px;
+            margin-bottom: -15px;
+        }
+
+        &-item{
+            width: 25%;
+            padding-right: 20px;
+            padding-bottom: 20px;
+
+            @include media-breakpoint-down(xxl) {
+                padding-right: 19px;
+                padding-bottom: 19px;
+            }
+            @include media-breakpoint-down(xl) {
+                padding-right: 18px;
+                padding-bottom: 18px;
+            }
+            @include media-breakpoint-down(lg) {
+                width: 33.3333333333%;
+                padding-right: 17px;
+                padding-bottom: 17px;
+            }
+            @include media-breakpoint-down(md) {
+                width: 50%;
+                padding-right: 16px;
+                padding-bottom: 16px;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 50%;
+                padding-right: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+.product-card{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $white;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    cursor: pointer;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &:hover{
+        background-color: $secondary-2;
+        border-color: $warning_light;
+
+        & .product-card__img{
+            border-color: $warning_light;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        aspect-ratio: 16/12;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__inner{
+        padding: 12px;
+    }
+
+    &__title{
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $title;
+        margin-bottom: 8px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: .98rem;
+            line-height: .98rem;
+            margin-bottom: 7.5px;
+        }
+        @include media-breakpoint-down(xl) {
+            font-size: .96rem;
+            line-height: .96rem;
+            margin-bottom: 7px;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: .94rem;
+            line-height: .94rem;
+            margin-bottom: 6.5px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: .92rem;
+            line-height: .92rem;
+            margin-bottom: 6px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: .9rem;
+            line-height: .9rem;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__location{
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        font-size: .8rem;
+        line-height: .8rem;
+        color: $subtitle;
+    }
+
+    &__user-tag{
+        margin-bottom: 8px;
+        font-size: .8rem;
+        line-height: .8rem;
+        color: $subtitle;
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    &__price{
+        font-size: 1rem;
+        color: $primary;
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-right: 5px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: .98rem;
+        }
+        @include media-breakpoint-down(xl) {
+            font-size: .96rem;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: .94rem;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: .92rem;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: .9rem;
+        }
+    }
+
+    &__time{
+        font-size: .8rem;
+        color: $subtitle;
+    }
+}
