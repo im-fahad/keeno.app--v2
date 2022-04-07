@@ -80,32 +80,32 @@
                             <div class="product-details__inner">
                                 <div class="product-details__row">
                                     <div class="product-details__row-item">
-                                        <div id="productSlider" class="product-details__slider">
-                                            <div class="product-details__slider-item">
+                                        <div id="productSlider" class="product-details-slider">
+                                            <div class="product-details-slider__item">
                                                 <img src="../assets/images/products/product-5.png"
-                                                     class="product-details__slider-item-img" alt="">
+                                                     class="product-details-slider__item-img" alt="">
                                             </div>
-                                            <div class="product-details__slider-item">
+                                            <div class="product-details-slider__item">
                                                 <img src="../assets/images/products/product-5.png"
-                                                     class="product-details__slider-item-img" alt="">
+                                                     class="product-details-slider__item-img" alt="">
                                             </div>
-                                            <div class="product-details__slider-item">
+                                            <div class="product-details-slider__item">
                                                 <img src="../assets/images/products/product-5.png"
-                                                     class="product-details__slider-item-img" alt="">
+                                                     class="product-details-slider__item-img" alt="">
                                             </div>
                                         </div>
-                                        <div id="productSliderNav" class="product-details__slider-nav">
-                                            <div class="product-details__slider-item">
-                                                <img src="../assets/images/products/product-5.png"
-                                                     class="product-details__slider-item-img" alt="">
+                                        <div id="productSliderNav" class="product-details-slider-nav">
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-5.png')"></div>
                                             </div>
-                                            <div class="product-details__slider-item">
-                                                <img src="../assets/images/products/product-5.png"
-                                                     class="product-details__slider-item-img" alt="">
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-5.png')"></div>
                                             </div>
-                                            <div class="product-details__slider-item">
-                                                <img src="../assets/images/products/product-5.png"
-                                                     class="product-details__slider-item-img" alt="">
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-5.png')"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -200,14 +200,19 @@
                                                     soluta temporibus.
                                                 </p>
                                             </div>
+                                            <div class="product-details__description-section">
+                                                <button class="product-details__description-btn product-details__description-btn--promote">Promote Ad</button>
+                                                <button class="product-details__description-btn product-details__description-btn--report">Report Ad</button>
+                                            </div>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="product-details__row-item">
+                                    <div class="product-details__inner">
                                     <div class="product-details__safety-advice">
-                                        <div class="d-flex align-items-center">
-                                            <img src="../assets/images/icons/shield-tick.svg" alt="">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <img src="../assets/images/icons/shield-tick.svg" class="product-details__safety-advice-icon" alt="">
                                             <h4 class="product-details__safety-advice-title">Safety Advice</h4>
                                         </div>
                                         <ul class="product-details__safety-advice-list">
@@ -233,6 +238,7 @@
                                         <div class="product-details__safety-advice-ads">
                                             <img src="../assets/images/banner/ads5.png" alt="">
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -518,7 +524,6 @@
         asNavFor: '#productSlider',
         dots: false,
         centerMode: false,
-        leftMode:true,
         focusOnSelect: true
     });
 </script>
