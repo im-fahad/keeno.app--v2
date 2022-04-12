@@ -31,7 +31,10 @@
         &__item {
             border-radius: 10px;
             overflow: hidden;
-            max-height: 415px;
+            height: 415px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         &-nav {
