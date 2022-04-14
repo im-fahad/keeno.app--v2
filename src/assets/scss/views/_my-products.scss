@@ -1,0 +1,9 @@
+.account {
+    &__products {
+        & .products {
+            &__row-item {
+                width: 33.3333333333%;
+            }
+        }
+    }
+}

@@ -3,12 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 let fs = require('fs');
 const pagess = fs.readdirSync('./src/views');
 
-// const templates= ['index','about']
-const pages = pagess.map(name=>{
-    console.log({name})
+const pages = pagess.map(name => {
+    let path = 'src/views'
     return new HtmlWebpackPlugin({
         filename: `${name}`,
-        template: `src/views/${name}`,
+        template: `${path}/${name}`,
     })
 })
 

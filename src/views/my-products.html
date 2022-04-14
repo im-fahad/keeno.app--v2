@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
+    <title>Keeno</title>
+</head>
+<body>
+<div class="main">
+    <div class="k-layout">
+        <div class="k-layout__header">
+            <div class="container h-full">
+                <div class="k-header">
+                    <a class="k-header__logo" href="#">
+                        <img class="k-header__logo-img" src="../assets/images/logo/keeno.svg" alt="Keeno">
+                    </a>
+
+                    <ul class="k-header__list">
+                        <li class="k-header__list-item">
+                            <div class="dropdown k-header__list-dropdown">
+                                <button type="button" class="k-header__btn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                    <i class="mdi mdi-chevron-down k-header__btn-icon ms-2"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Lang 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Lang 2</a></li>
+                                    <li><a class="dropdown-item" href="#">lang 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn">
+                                <i class="mdi mdi-wechat k-header__btn-icon me-2"></i>
+                                Chat
+                            </button>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn">
+                                <i class="mdi mdi-account k-header__btn-icon me-2"></i>
+                                Login
+                            </button>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn active">
+                                <i class="mdi mdi-camera k-header__btn-icon me-2"></i>
+                                Sell Product
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="k-layout__inner">
+            <div class="k-layout__inner-main">
+                <div class="container">
+                    <div class="section d-flex align-items-center justify-content-center">
+                        <div class="ad-container ad-container--970">
+                            <img class="ad-container__img" src="../assets/images/banner/ad.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="account">
+                            <div class="account__sidebar">
+                                <ul class="account-sidebar-list">
+                                    <li class="account-sidebar-list__item">
+                                        <a href="#" class="account-sidebar-list__item-link">My Products</a>
+                                    </li>
+                                    <li class="account-sidebar-list__item">
+                                        <a href="#" class="account-sidebar-list__item-link">My Shops</a>
+                                    </li>
+                                    <li class="account-sidebar-list__item">
+                                        <a href="#" class="account-sidebar-list__item-link">My Orders</a>
+                                    </li>
+                                    <li class="account-sidebar-list__item">
+                                        <a href="#" class="account-sidebar-list__item-link">Inbox</a>
+                                    </li>
+                                    <li class="account-sidebar-list__item">
+                                        <a href="#" class="account-sidebar-list__item-link active">My Account</a>
+                                    </li>
+                                    <li class="account-sidebar-list__item">
+                                        <a href="#" class="account-sidebar-list__item-link">Log out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="account__inner">
+                                <h3 class="account__title">My Products</h3>
+
+                                <div class="account__products">
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#all" type="button" role="tab" aria-controls="all"
+                                                    aria-selected="true">All
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="boosted-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#boosted" type="button" role="tab"
+                                                    aria-controls="boosted" aria-selected="false">Boosted
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="sold-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#sold" type="button" role="tab"
+                                                    aria-controls="sold" aria-selected="false">Sold
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="saved-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#saved" type="button" role="tab"
+                                                    aria-controls="saved" aria-selected="false">Saved
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="all" role="tabpanel"
+                                             aria-labelledby="all-tab">
+                                            <div class="products">
+                                                <div class="products__row">
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-1.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">Marshall Sound box</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="product-card__row">
+                                                                        <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                        <span class="product-card__time">50 minutes ago</span>
+                                                                    </div>
+<!--                                                                    <button class="btn btn-warning">Promoted</button>-->
+                                                                </div>
+<!--                                                                <div class="d-flex align-items-center">-->
+<!--                                                                    <div class="d-flex align-items-center">-->
+<!--                                                                        <button class="btn btn-primary">Edit</button>-->
+<!--                                                                        <button class="btn btn-outline-primary">Mark as Sold</button>-->
+<!--                                                                    </div>-->
+<!--                                                                    <button class="btn btn-sm btn-outline-secondary">-->
+<!--                                                                        <span class="mdi mdi-trash-can"></span>-->
+<!--                                                                    </button>-->
+<!--                                                                </div>-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-2.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                    <span class="product-card__time">50 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">86,000 Tk.</h5>
+                                                                    <span class="product-card__time">10 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">145,000 Tk.</h5>
+                                                                    <span class="product-card__time">2 hours ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-1.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">Marshall Sound box</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                    <span class="product-card__time">50 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-2.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                    <span class="product-card__time">50 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">86,000 Tk.</h5>
+                                                                    <span class="product-card__time">10 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">145,000 Tk.</h5>
+                                                                    <span class="product-card__time">2 hours ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="boosted" role="tabpanel"
+                                             aria-labelledby="boosted-tab">
+                                            <div class="products">
+                                                <div class="products__row">
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-2.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                    <span class="product-card__time">50 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">86,000 Tk.</h5>
+                                                                    <span class="product-card__time">10 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">145,000 Tk.</h5>
+                                                                    <span class="product-card__time">2 hours ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-2.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                    <span class="product-card__time">50 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">86,000 Tk.</h5>
+                                                                    <span class="product-card__time">10 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">145,000 Tk.</h5>
+                                                                    <span class="product-card__time">2 hours ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="sold" role="tabpanel"
+                                             aria-labelledby="sold-tab">
+                                            <div class="products">
+                                                <div class="products__row">
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">86,000 Tk.</h5>
+                                                                    <span class="product-card__time">10 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">145,000 Tk.</h5>
+                                                                    <span class="product-card__time">2 hours ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-1.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">Marshall Sound box</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                    <span class="product-card__time">50 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-2.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">70,000 Tk.</h5>
+                                                                    <span class="product-card__time">50 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">86,000 Tk.</h5>
+                                                                    <span class="product-card__time">10 minutes ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="products__row-item">
+                                                        <div class="product-card">
+                                                            <div class="product-card__img"
+                                                                 style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                                            <div class="product-card__inner">
+                                                                <h5 class="product-card__title">iPhone 13 pro</h5>
+                                                                <div class="product-card__location">
+                                                                    <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                                    <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                                                </div>
+                                                                <span class="product-card__user-tag">Member</span>
+                                                                <div class="product-card__row">
+                                                                    <h5 class="product-card__price">145,000 Tk.</h5>
+                                                                    <span class="product-card__time">2 hours ago</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="saved" role="tabpanel"
+                                             aria-labelledby="saved-tab">
+                                            <p class="text-center">Empty</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="k-layout__footer">
+            <div class="container">
+                <div class="k-footer">
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <a class="k-footer__logo" href="#">
+                                <img class="k-footer__logo-img" src="../assets/images/logo/keeno.svg" alt="Keeno">
+                            </a>
+                            <p class="k-footer__description">
+                                Keeno is the fastest online
+                                marketplace in Bangladesh. Start
+                                buying or selling anything instantly
+                                with our simple navigation without
+                                any hassle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                About Keeno.
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Career</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">How to Sell Products</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">About Us</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                Legal
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">FAQ</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Terms & Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                Follow Us
+                            </h4>
+                            <ul class="k-footer__list k-footer__list--social">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon" src="../assets/images/icons/Facebook.svg"
+                                             alt="Facebook">
+                                    </a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon" src="../assets/images/icons/instagram.svg"
+                                             alt="Instagram">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h4 class="k-footer__item-title">
+                                Follow Us
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon k-footer__list-item-icon--g-play"
+                                             src="../assets/images/icons/google-play.svg" alt="Google Play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendors/jquery/dist/jquery.min.js"></script>
+<script src="../assets/vendors/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

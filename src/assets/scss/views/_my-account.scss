@@ -1,0 +1,38 @@
+.account {
+    &__user{
+        display: flex;
+
+        &-avatar{
+            width: 160px;
+            height: 160px;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &-info{
+            margin-left: 20px;
+
+            &-btn{
+                min-width: 150px;
+            }
+        }
+
+        &-name{
+            font-size: 1.4rem;
+            color: $title;
+            margin-bottom: 8px;
+        }
+
+        &-item{
+            margin-bottom: 8px;
+            font-size: .9rem;
+            color: $subtitle;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
