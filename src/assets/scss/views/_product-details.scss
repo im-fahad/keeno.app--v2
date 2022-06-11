@@ -1,0 +1,312 @@
+.product-details {
+    width: 100%;
+
+    &__inner {
+        box-shadow: 0 6px 32px rgba(0, 0, 0, 0.04);
+        border-radius: 10px;
+        padding: 24px;
+    }
+
+    &__row {
+        display: flex;
+
+        &-item {
+            margin-right: 20px;
+
+            &:first-child {
+                max-width: 770px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &-slider {
+        border-radius: 10px;
+        overflow: hidden;
+        max-height: 415px;
+
+        &__item {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 415px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &-nav {
+            max-height: max-content;
+            //max-width: 96px;
+
+            &__item{
+                height:max-content;
+                width: 96px;
+                overflow: hidden;
+                padding: 10px 10px 0 0;
+
+                &-img{
+                    height: 80px;
+                    width: 100%;
+                    border-radius: 5px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    cursor: pointer;
+                }
+            }
+
+            & .slick-track{
+                width: auto !important;
+            }
+        }
+    }
+
+    &__info {
+        width: 100%;
+
+        &-section {
+            border-bottom: 1px solid $secondary;
+            margin-bottom: 15px;
+
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+        }
+
+        &-pill {
+            padding: 4px 6px;
+            border-radius: 5px;
+            font-size: .7rem;
+            background-color: $primary;
+            color: $white;
+            margin-bottom: 15px;
+            width: max-content;
+        }
+
+        &-title {
+            font-size: 1.4rem;
+            color: $title;
+            margin-bottom: 15px;
+        }
+
+        &-time,
+        &-location {
+            display: flex;
+            align-items: center;
+            font-size: .8rem;
+            color: $subtitle;
+            margin-bottom: 15px;
+        }
+
+        &-price {
+            font-size: 1.4rem;
+            color: $primary;
+            margin-bottom: 15px;
+        }
+
+        & .owner-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &__avatar {
+                width: 50px;
+                height: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &__details {
+                padding-left: 10px;
+
+                &-name {
+                    font-size: 1rem;
+                    color: $title;
+                    margin-bottom: 5px;
+                }
+
+                &-status {
+                    display: flex;
+                    align-items: center;
+                    font-size: .8rem;
+                    color: $subtitle;
+
+                    &-icon {
+                        color: $primary;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        &-phone {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: $title;
+            margin-bottom: 15px;
+
+            &-icon {
+                margin-right: 10px;
+            }
+
+            &-btn {
+                border: none;
+                background-color: transparent;
+                font-size: .8rem;
+                color: $primary;
+                text-decoration: underline;
+            }
+        }
+
+        &-chat-btn {
+            width: 100%;
+            max-width: 260px;
+            border-radius: 10px;
+            background-color: transparent;
+            height: 44px;
+            border: 1px solid $primary;
+            color: $title;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .9rem;
+            margin-bottom: 15px;
+
+            &-icon {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__share {
+        width: 100%;
+
+        &-title {
+            font-size: .8rem;
+            margin-bottom: 5px;
+        }
+
+        &-row {
+            display: flex;
+            align-items: center;
+        }
+
+        &-item {
+            margin-right: 10px;
+
+            &-icon {
+                max-width: 30px;
+                max-height: 30px;
+            }
+        }
+    }
+
+    &__description{
+        width: 100%;
+
+        &-section{
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $secondary;
+
+            &:last-child{
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border-bottom: none;
+            }
+        }
+
+        &-title{
+            font-size: 1.2rem;
+            color: $title;
+            margin-bottom: 15px;
+        }
+
+        &-items{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            font-size: .9rem;
+            color: $subtitle;
+        }
+
+        &-text{
+            font-size: .9rem;
+            color:$subtitle
+        }
+
+        &-btn{
+            height: 44px;
+            border-radius: 10px;
+            border: none;
+            padding: 0 15px;
+            font-size: .8rem;
+            font-weight: 600;
+            margin-right: 15px;
+
+            &--promote{
+                background-color: $warning_light;
+                color: $white;
+
+                &:hover{
+                    background-color: darken($warning_light,10%);
+                }
+            }
+
+            &--report{
+                background-color: rgba($warning_light, .2);
+                color: $warning_light;
+
+                &:hover{
+                    background-color: darken($warning_light,10%);
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__safety-advice{
+        width: max-content;
+
+        &-icon{
+            width: 30px;
+            margin-right: 10px;
+        }
+        &-title{
+            font-size: 1.2rem;
+            color: $title;
+            margin-bottom: 0;
+        }
+
+        &-list{
+            margin-bottom: 15px;
+            padding-left: 28px;
+
+            &-item{
+                font-size: .8rem;
+                color: $subtitle;
+                margin-bottom: 10px;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-link{
+            width: 100%;
+            display: block;
+            font-size: .9rem;
+            color: $primary;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+    }
+}

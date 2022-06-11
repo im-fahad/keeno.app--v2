@@ -1,0 +1,47 @@
+.modal{
+    &-content{
+        position: relative;
+        border-radius: 10px;
+        border: none;
+    }
+
+    &__close-btn{
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 40px;
+        height: 40px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: transparent;
+        border: 1px solid #F0F0F0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        color: $danger;
+
+        &:hover{
+            background-color: $danger;
+            color: $white;
+            border-color: $danger;
+        }
+    }
+
+    &__inner{
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    &__title{
+        font-size: 1.4rem;
+        color: $title;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        font-size: .9rem;
+        color: $subtitle;
+        margin-bottom: 10px;
+    }
+}

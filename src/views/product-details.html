@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.7.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick.css">
+    <link rel="stylesheet" href="../assets/vendors/slick/slick-theme.css">
+    <title>Keeno</title>
+</head>
+<body>
+<div class="main">
+    <div class="k-layout">
+        <div class="k-layout__header">
+            <div class="container h-full">
+                <div class="k-header">
+                    <a class="k-header__logo" href="#">
+                        <img class="k-header__logo-img" src="../assets/images/logo/keeno.svg" alt="Keeno">
+                    </a>
+
+                    <ul class="k-header__list">
+                        <li class="k-header__list-item">
+                            <div class="dropdown k-header__list-dropdown">
+                                <button type="button" class="k-header__btn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                    <i class="mdi mdi-chevron-down k-header__btn-icon ms-2"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Lang 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Lang 2</a></li>
+                                    <li><a class="dropdown-item" href="#">lang 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn">
+                                <i class="mdi mdi-wechat k-header__btn-icon me-2"></i>
+                                Chat
+                            </button>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn">
+                                <i class="mdi mdi-account k-header__btn-icon me-2"></i>
+                                Login
+                            </button>
+                        </li>
+                        <li class="k-header__list-item">
+                            <button class="k-header__btn active">
+                                <i class="mdi mdi-camera k-header__btn-icon me-2"></i>
+                                Sell Product
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="k-layout__inner">
+            <div class="k-layout__inner-main">
+                <div class="container">
+                    <div class="section d-flex align-items-center justify-content-center">
+                        <div class="ad-container ad-container--970">
+                            <img class="ad-container__img" src="../assets/images/banner/ad.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="breadcrumb">
+                        <div class="breadcrumb__left">
+                            <ul class="breadcrumb__list">
+                                <li class="breadcrumb__list-item">Home</li>
+                                <li class="breadcrumb__list-item">Electronics & Gadgets</li>
+                                <li class="breadcrumb__list-item">Laptop</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="product-details">
+                            <div class="product-details__inner">
+                                <div class="product-details__row">
+                                    <div class="product-details__row-item">
+                                        <div id="productSlider" class="product-details-slider">
+                                            <div class="product-details-slider__item"
+                                                 style="background-image: url('../assets/images/products/product-1.jpeg')"></div>
+                                            <div class="product-details-slider__item"
+                                                 style="background-image: url('../assets/images/products/product-2.jpeg')"></div>
+                                            <div class="product-details-slider__item"
+                                                 style="background-image: url('../assets/images/products/product-3.jpeg')"></div>
+                                            <div class="product-details-slider__item"
+                                                 style="background-image: url('../assets/images/products/product-4.jpeg')"></div>
+                                            <div class="product-details-slider__item"
+                                                 style="background-image: url('../assets/images/products/product-5.jpeg')"></div>
+                                        </div>
+                                        <div id="productSliderNav" class="product-details-slider-nav">
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-1.jpeg')"></div>
+                                            </div>
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-2.jpeg')"></div>
+                                            </div>
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-3.jpeg')"></div>
+                                            </div>
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-4.jpeg')"></div>
+                                            </div>
+                                            <div class="product-details-slider-nav__item">
+                                                <div class="product-details-slider-nav__item-img"
+                                                     style="background-image: url('../assets/images/products/product-5.jpeg')"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-details__row-item">
+                                        <div class="product-details__info">
+                                            <div class="product-details__info-section">
+                                                <div class="product-details__info-pill">Featured</div>
+                                                <h4 class="product-details__info-title">iPhone 13 pro max 256gb</h4>
+                                                <div class="product-details__info-location">
+                                                    <span class="mdi mdi-map-marker-outline product-details__info-location-icon"></span>
+                                                    <span class="product-details__info-location-text">Mirpur, Dhaka</span>
+                                                </div>
+                                                <div class="product-details__info-time">
+                                                    <span class="mdi mdi-clock-time-five-outline product-details__info-time-icon"></span>
+                                                    <span class="product-details__info-time-text">50 minutes ago</span>
+                                                </div>
+                                                <h4 class="product-details__info-price">150,000 Tk.</h4>
+                                            </div>
+                                            <div class="product-details__info-section">
+                                                <div class="owner-info">
+                                                    <div class="owner-info__avatar"
+                                                         style="background-image: url('../assets/images/avatar.png')"></div>
+                                                    <div class="owner-info__details">
+                                                        <h5 class="owner-info__details-name">Jonathon Doe</h5>
+                                                        <div class="owner-info__details-status">
+                                                            <span class="mdi mdi-radiobox-marked owner-info__details-status-icon"></span>
+                                                            <span class="owner-info__details-status-text">Member</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-details__info-phone">
+                                                    <span class="mdi mdi-phone-in-talk product-details__info-phone-icon"></span>
+                                                    <span class="product-details__info-phone-number">017XXXXXXXX</span>
+                                                    <button class="product-details__info-phone-btn">Show number</button>
+                                                </div>
+
+                                                <button class="product-details__info-chat-btn">
+                                                    <span class="mdi mdi-wechat product-details__info-chat-btn-icon"></span>
+                                                    Chat with Seller
+                                                </button>
+
+                                                <div class="product-details__share">
+                                                    <p class="product-details__share-title">Share with your friends:</p>
+                                                    <div class="product-details__share-row">
+                                                        <div class="product-details__share-item">
+                                                            <img src="../assets/images/icons/Facebook.svg"
+                                                                 class="product-details__share-item-icon" alt="">
+                                                        </div>
+                                                        <div class="product-details__share-item">
+                                                            <img src="../assets/images/icons/instagram.svg"
+                                                                 class="product-details__share-item-icon" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="product-details">
+                            <div class="product-details__row">
+                                <div class="product-details__row-item">
+                                    <div class="product-details__inner">
+                                        <div class="product-details__description">
+                                            <div class="product-details__description-section">
+                                                <h4 class="product-details__description-title">Product Details</h4>
+                                                <div class="product-details__description-items">
+                                                    <div class="d-flex align-items-center">
+                                                        Brand: <strong>Apple</strong>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        Model: <strong>iPhone 13 pro max</strong>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        Condition: <strong>New</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-details__description-section">
+                                                <h4 class="product-details__description-title">Description</h4>
+                                                <p class="product-details__description-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Accusantium aliquam, architecto aspernatur assumenda atque aut,
+                                                    beatae blanditiis consequatur corporis culpa cum deserunt, dicta
+                                                    dolorem ea excepturi explicabo facere facilis harum hic labore
+                                                    laboriosam maiores maxime nobis odio officia officiis omnis optio
+                                                    perferendis possimus praesentium quaerat quas quisquam reiciendis
+                                                    soluta temporibus.
+                                                </p>
+                                            </div>
+                                            <div class="product-details__description-section">
+                                                <button class="product-details__description-btn product-details__description-btn--promote">
+                                                    Promote Ad
+                                                </button>
+                                                <button class="product-details__description-btn product-details__description-btn--report"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Report
+                                                    Ad
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-details__row-item">
+                                    <div class="product-details__inner">
+                                        <div class="product-details__safety-advice">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <img src="../assets/images/icons/shield-tick.svg"
+                                                     class="product-details__safety-advice-icon" alt="">
+                                                <h4 class="product-details__safety-advice-title">Safety Advice</h4>
+                                            </div>
+                                            <ul class="product-details__safety-advice-list">
+                                                <li class="product-details__safety-advice-list-item">
+                                                    Avoid offers that look unrealistic
+                                                </li>
+                                                <li class="product-details__safety-advice-list-item">
+                                                    Chat with seller to clarify item details
+                                                </li>
+                                                <li class="product-details__safety-advice-list-item">
+                                                    Meet in a safe & public place
+                                                </li>
+                                                <li class="product-details__safety-advice-list-item">
+                                                    Check the item before buying it
+                                                </li>
+                                                <li class="product-details__safety-advice-list-item">
+                                                    Don’t pay in advance
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="product-details__safety-advice-link">
+                                                See all safety advice <span>&#8594;</span>
+                                            </a>
+                                            <div class="product-details__safety-advice-ads">
+                                                <img src="../assets/images/banner/ads5.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section d-flex align-items-center justify-content-center">
+                        <div class="ad-container ad-container--970">
+                            <img class="ad-container__img" src="../assets/images/banner/ad.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h4 class="section__title">Related Products</h4>
+                        <div class="products">
+                            <div class="products__row">
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-1.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">Marshall Sound box</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">70,000 Tk.</h5>
+                                                <span class="product-card__time">50 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-2.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">iPhone 13 pro</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">70,000 Tk.</h5>
+                                                <span class="product-card__time">50 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">iPhone 13 pro</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">86,000 Tk.</h5>
+                                                <span class="product-card__time">10 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">iPhone 13 pro</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">145,000 Tk.</h5>
+                                                <span class="product-card__time">2 hours ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-1.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">Marshall Sound box</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">70,000 Tk.</h5>
+                                                <span class="product-card__time">50 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-2.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">iPhone 13 pro</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">70,000 Tk.</h5>
+                                                <span class="product-card__time">50 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-3.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">iPhone 13 pro</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">86,000 Tk.</h5>
+                                                <span class="product-card__time">10 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products__row-item">
+                                    <div class="product-card">
+                                        <div class="product-card__img"
+                                             style="background-image: url('../assets/images/products/product-4.png')"></div>
+                                        <div class="product-card__inner">
+                                            <h5 class="product-card__title">iPhone 13 pro</h5>
+                                            <div class="product-card__location">
+                                                <span class="mdi mdi-map-marker-outline product-card__location-icon"></span>
+                                                <span class="product-card__location-tet">Mirpur, Dhaka</span>
+                                            </div>
+                                            <span class="product-card__user-tag">Member</span>
+                                            <div class="product-card__row">
+                                                <h5 class="product-card__price">145,000 Tk.</h5>
+                                                <span class="product-card__time">2 hours ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section d-flex align-items-center justify-content-center">
+                        <div class="ad-container ad-container--970">
+                            <img class="ad-container__img" src="../assets/images/banner/ad.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="k-layout__footer">
+            <div class="container">
+                <div class="k-footer">
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <a class="k-footer__logo" href="#">
+                                <img class="k-footer__logo-img" src="../assets/images/logo/keeno.svg" alt="Keeno">
+                            </a>
+                            <p class="k-footer__description">
+                                Keeno is the fastest online
+                                marketplace in Bangladesh. Start
+                                buying or selling anything instantly
+                                with our simple navigation without
+                                any hassle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                About Keeno.
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Career</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">How to Sell Products</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">About Us</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                Legal
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">FAQ</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">Terms & Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="k-footer__item">
+                        <div class="k-footer__item-inner">
+                            <h4 class="k-footer__item-title">
+                                Follow Us
+                            </h4>
+                            <ul class="k-footer__list k-footer__list--social">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon" src="../assets/images/icons/Facebook.svg"
+                                             alt="Facebook">
+                                    </a>
+                                </li>
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon" src="../assets/images/icons/instagram.svg"
+                                             alt="Instagram">
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <h4 class="k-footer__item-title">
+                                Follow Us
+                            </h4>
+                            <ul class="k-footer__list">
+                                <li class="k-footer__list-item">
+                                    <a class="k-footer__list-item-link" href="#">
+                                        <img class="k-footer__list-item-icon k-footer__list-item-icon--g-play"
+                                             src="../assets/images/icons/google-play.svg" alt="Google Play">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade modal--report" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+         tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button class="modal__close-btn" data-bs-dismiss="modal">
+                    <span class="mdi mdi-close modal__close-btn-icon"></span>
+                </button>
+                <div class="modal__inner">
+                    <h4 class="modal__title">Is there someting wrong with this ad?</h4>
+                    <p class="modal__text">
+                        We're constantly working hard to assure that our
+                        ads meet high standards and we are very
+                        grateful for any kind of feedback from our users.
+                    </p>
+
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="reason">Reason</label>
+                            <select name="reason" id="reason" class="form-control">
+                                <option selected disabled>Select Reason</option>
+                                <option value="">Reason 1</option>
+                                <option value="">Reason 2</option>
+                                <option value="">Reason 3</option>
+                                <option value="">Reason 4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="6"
+                                      placeholder="Explain the reason..."></textarea>
+                        </div>
+
+                        <button class="btn btn-primary btn-block">Report</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendors/slick/slick.js"></script>
+<script>
+    $('#productSlider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        asNavFor: '#productSliderNav'
+    })
+
+    $('#productSliderNav').slick({
+        slidesToShow: 8,
+        slidesToScroll: 8,
+        asNavFor: '#productSlider',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+    });
+</script>
+</body>
+</html>

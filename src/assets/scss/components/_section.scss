@@ -1,0 +1,50 @@
+.section{
+    width: 100%;
+    margin-bottom: 50px;
+
+    //&:last-child{
+    //    margin-bottom: 0;
+    //}
+
+    @include media-breakpoint-down(xxl) {
+        margin-bottom: 48px;
+    }
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 46px;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 44px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-bottom: 42px;
+    }
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 40px;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        color: $title;
+        margin-bottom: 25px;
+
+        @include media-breakpoint-down(xxl) {
+            margin-bottom: 24px;
+        }
+        @include media-breakpoint-down(xl) {
+            margin-bottom: 23px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 22px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 21px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__inner{
+
+    }
+}

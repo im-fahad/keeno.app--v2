@@ -1,0 +1,23 @@
+.nav {
+    &-tabs {
+        width: 100%;
+        border-bottom: 1px solid $secondary;
+        margin-bottom: 20px;
+    }
+
+    &-link {
+        padding: 8px 15px;
+        font-size: .9rem;
+        font-weight: 500;
+        color: $subtitle !important;
+        border: none !important;
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        background-color: transparent !important;
+
+        &.active {
+            background-color: rgba($primary, .1) !important;
+            color: $primary !important;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.breadcrumb{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &__left{
+        flex: 1;
+    }
+
+    &__list{
+        list-style: none;
+        margin-bottom: 12px;
+        padding: 0;
+
+        &-item{
+            font-size: .9rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            margin-right: 12px;
+            color: $primary;
+
+            &:after{
+                content: '/';
+                position: absolute;
+                right: -12px;
+                color: $dark;
+                font-weight: 500;
+            }
+
+            &:last-child{
+                color: $title;
+
+                &:after{
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__title{
+        font-size: 1.4rem;
+        color: $title;
+        margin-bottom: 0;
+    }
+}

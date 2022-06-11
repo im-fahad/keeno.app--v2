@@ -1,0 +1,30 @@
+.form-group {
+    margin-bottom: 25px;
+
+    & label {
+        font-size: 1rem;
+        color: $title;
+        margin-bottom: 8px;
+    }
+}
+.form-control{
+    border-radius: 10px;
+    border-color: #DFDDDD;
+    font-size: .9rem;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: $primary;
+    }
+
+    &:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+input.form-control,
+select.form-control{
+    height: 44px;
+}

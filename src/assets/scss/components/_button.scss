@@ -1,0 +1,49 @@
+.btn {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+
+    &-primary {
+        background-color: $primary;
+
+        &:hover {
+            background-color: darken($primary, 10%);
+        }
+    }
+
+    &-secondary {
+        background-color: $secondary;
+
+        &:hover {
+            background-color: darken($secondary, 10%);
+        }
+    }
+
+    &-info {
+        background-color: $info;
+
+        &:hover {
+            background-color: darken($info, 10%);
+        }
+    }
+
+    &-danger {
+        background-color: $danger;
+
+        &:hover {
+            background-color: darken($danger, 10%);
+        }
+    }
+
+    &-warning {
+        background-color: $warning;
+
+        &:hover {
+            background-color: darken($warning, 10%);
+        }
+    }
+}
